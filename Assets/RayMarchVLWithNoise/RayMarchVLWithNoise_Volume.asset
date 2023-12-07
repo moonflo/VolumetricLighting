@@ -1,0 +1,179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8843449220782889535
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d1f9bafe498734983d0387ca7f9fc6, type: 3}
+  m_Name: TemporalAAVolume
+  m_EditorClassIdentifier: 
+  active: 1
+  jitterSpread:
+    m_OverrideState: 0
+    m_Value: 0
+  sharpness:
+    m_OverrideState: 0
+    m_Value: 0.25
+  stationaryBlending:
+    m_OverrideState: 0
+    m_Value: 0.95
+  motionBlending:
+    m_OverrideState: 0
+    m_Value: 0.85
+  useInsideMinmax:
+    m_OverrideState: 0
+    m_Value: 0
+  useAABBClip:
+    m_OverrideState: 0
+    m_Value: 0
+  useDilate:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &-7650693569922854063
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b3e7c7cb6280f74b9db2de57778bc8e, type: 3}
+  m_Name: VolumetricVolume
+  m_EditorClassIdentifier: 
+  active: 1
+  enableEffect:
+    m_OverrideState: 1
+    m_Value: 1
+  lightColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.4811321, g: 0.44255075, b: 0.44255075, a: 1}
+  lightIntensityPerStep:
+    m_OverrideState: 1
+    m_Value: 0.0068
+  maxDistance:
+    m_OverrideState: 1
+    m_Value: 1000
+  stepDistance:
+    m_OverrideState: 1
+    m_Value: 0.3
+  maxStep:
+    m_OverrideState: 1
+    m_Value: 100
+  blurLoopTime:
+    m_OverrideState: 1
+    m_Value: 2
+  BlurIntensity:
+    m_OverrideState: 1
+    m_Value: 0.139
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: RayMarchVLWithNoise_Volume
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: 1610408486301775704}
+--- !u!114 &1610408486301775704
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b7cfd92fdee64c4a8a88db8ffcfdb14, type: 3}
+  m_Name: RayMarchVLWithNoiseVolumeComponent
+  m_EditorClassIdentifier: 
+  active: 1
+  enableEffect:
+    m_OverrideState: 1
+    m_Value: 1
+  lightColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  lightIntensityPerStep:
+    m_OverrideState: 1
+    m_Value: 0.33
+  maxDistance:
+    m_OverrideState: 1
+    m_Value: 1000
+  stepDistance:
+    m_OverrideState: 1
+    m_Value: 0.1
+  noiseMixFactor:
+    m_OverrideState: 1
+    m_Value: 0.101
+  maxStep:
+    m_OverrideState: 1
+    m_Value: 10
+  maxSliceCount:
+    m_OverrideState: 1
+    m_Value: 63
+  noiseMap00:
+    m_OverrideState: 0
+    m_Value: {fileID: 2800000, guid: 9732907131a933a42baefc95522258c9, type: 3}
+  blurLoopTime:
+    m_OverrideState: 1
+    m_Value: 1
+  BlurIntensity:
+    m_OverrideState: 1
+    m_Value: 0.753
+--- !u!114 &5892815941763008618
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b7cfd92fdee64c4a8a88db8ffcfdb14, type: 3}
+  m_Name: RayMarchVLWithNoiseVolumeComponent
+  m_EditorClassIdentifier: 
+  active: 1
+  enableEffect:
+    m_OverrideState: 1
+    m_Value: 1
+  lightColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  lightIntensityPerStep:
+    m_OverrideState: 1
+    m_Value: 0.1
+  maxDistance:
+    m_OverrideState: 1
+    m_Value: 1000
+  stepDistance:
+    m_OverrideState: 1
+    m_Value: 0.1
+  noiseMixFactor:
+    m_OverrideState: 1
+    m_Value: 0
+  maxStep:
+    m_OverrideState: 1
+    m_Value: 10
+  maxSliceCount:
+    m_OverrideState: 0
+    m_Value: 256
+  noiseMap00:
+    m_OverrideState: 0
+    m_Value: {fileID: 2800000, guid: 9732907131a933a42baefc95522258c9, type: 3}
+  blurLoopTime:
+    m_OverrideState: 1
+    m_Value: 1
+  BlurIntensity:
+    m_OverrideState: 1
+    m_Value: 0
