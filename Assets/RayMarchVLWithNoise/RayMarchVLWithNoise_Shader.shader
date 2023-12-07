@@ -125,7 +125,6 @@ Shader "Custom/RayMarchVolumetricLightingWithNoise"
                 float totalLightMarchDistance = 0;
                 float distanceBias = maxDistance / _MaxStep;
                 
-                
                 UNITY_LOOP
                 for(int marchStep = 0; marchStep < _MaxStep; marchStep++)
                 {
